@@ -1,0 +1,40 @@
+@import "reset.css";
+@charset "utf-8";
+
+.box{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.look{
+	
+	border-radius: 5px;
+	height: 50px;
+	width: 350px;
+	font-size: 24px;
+	font-family: "微软雅黑";
+	margin: 10px;
+	border:solid 2px #CCFFFF;
+	outline:none;
+	padding: 15px;
+}
+.look+.left{
+	border-radius: 5px 0px 0px 5px;
+	display: block;
+	position: absolute;
+	background: #FFF;
+	height: 50px;
+	width: 0px;
+	left: 12px;
+	top: 10px;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+.look:focus+.left{
+	background: #CCFFFF;
+	width: 7px;
+}
