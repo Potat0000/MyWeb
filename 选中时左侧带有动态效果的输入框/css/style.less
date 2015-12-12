@@ -1,11 +1,17 @@
-@import "reset.css";
 @charset "utf-8";
+@reg_w: 500px;
+@reg_h: 300px;
 
-@reg_w:500px;
-@reg_h:400px;
+.name {
+	top: 10px;
+}
 
-html{
-	background: url(../img/background.jpg) 50% 50% /  no-repeat fixed;
+.password {
+	top: 80px;
+}
+
+html {
+	background: url(../img/background.jpg) 50% 50% no-repeat fixed;
 }
 
 .box-shadow(@x: 1px, @y: 1px, @blur: 0px, @color: #212121) {
@@ -14,29 +20,25 @@ html{
 	box-shadow: @x @y @blur @color;
 }
 
-.listbox{
+.listbox {
 	position: absolute;
 	display: block;
-	background-color: rgba(255,255,255,0.7);
+	background-color: rgba(255, 255, 255, 0.7);
 	height: @reg_h;
 	width: @reg_w;
-	top:50%;
-	left:50%;
+	top: 50%;
+	left: 50%;
 	margin-left: -1 * @reg_w / 2;
 	margin-top: -1 * @reg_h / 2;
-	.box-shadow(0px,0px,100px,#787878);
+	.box-shadow(0px, 0px, 50px, #787878);
 }
 
-.box{
+.box {
 	position: absolute;
-}
-
-.name{
-	top: 10px;
 	left: (@reg_w - 350px)/2;
 }
 
-.look{
+.look {
 	position: absolute;
 	border-radius: 5px;
 	height: 50px;
@@ -44,38 +46,39 @@ html{
 	font-size: 24px;
 	font-family: "微软雅黑";
 	top: 50px;
-	border:solid 2px #CCCCCC;
-	outline:none;
-	padding: 15px;
+	border: solid 2px #CCCCCC;
+	outline: none;
+	padding-left: 15px;
 }
-.left{
+
+.left {
 	border-radius: 5px 0px 0px 5px;
 	display: block;
 	position: absolute;
 	background: #CCCCCC;
+	opacity: 0;
 	height: 50px;
 	width: 0px;
 	top: 50px;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-ms-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
+	-webkit-transition: width 0.3s ease-out, opacity 0.1s linear;
+	-moz-transition: width 0.3s ease-out, opacity 0.1s linear;
+	-ms-transition: width 0.3s ease-out, opacity 0.1s linear;
+	-o-transition: width 0.3s ease-out, opacity 0.1s linear;
+	transition: width 0.3s ease-out, opacity 0.1s linear;
 }
 
-.inf{
-	display: block;
-	position: absolute;
-	top:62px;
-	left:17px;
-	font-size: 24px;
-	color:#CCCCCC;
-}
-
-.look:focus~.left{
+.look:focus~.left {
 	width: 7px;
+	opacity: 1;
 }
 
-.look:focus~.inf{
-	color:#FFFFFF;
+.look::-webkit-input-placeholder {
+	color: #999;
+	-webkit-transition: color.5s;
+}
+
+.look:focus::-webkit-input-placeholder,
+.look:hover::-webkit-input-placeholder {
+	color: #c2c2c2;
+	top: 100px;
 }
