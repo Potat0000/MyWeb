@@ -35,13 +35,18 @@ html {
 	font-family: "微软雅黑";
 	border: solid 2px #CCC;
 	outline: none;
+	-webkit-transition: border-color 0.2s linear;
+    -moz-transition: border-color 0.2s linear;
+    -ms-transition: border-color 0.2s linear;
+    -o-transition: border-color 0.2s linear;
+    transition: border-color 0.2s linear;
 }
 
 .left {
 	border-radius: 5px 0px 0px 5px;
 	display: block;
 	position: absolute;
-	background: #CCC;
+	background: #66CC99;
 	opacity: 0;
 	width: 0px;
 	top: 50px;
@@ -55,6 +60,9 @@ html {
 .look:focus~.left {
 	width: 7px;
 	opacity: 1;
+}
+.look:focus {
+    border-color: #66CC99;
 }
 
 .look::-webkit-input-placeholder {
