@@ -1,0 +1,42 @@
+@media screen and (max-width : 767px) and (min-width : 481px){
+
+@input_w: 275px;
+@box_w: 375px;
+@box_h: 300px;
+
+.name {
+    top: 10px;
+}
+
+.password {
+    top: 80px;
+}
+
+.button {
+    top: 200px;
+}
+.box{
+    left: (@box_w - @input_w)/2;
+}
+.look {
+    height: 50px;
+    width: @input_w;
+    font-size: 24px;
+    top: 50px;
+    padding-left: 15px;
+}
+.listbox{
+    margin-left: -1 * @box_w / 2;
+    margin-top: -1 * @box_h / 2;
+    height: @box_h;
+    width: @box_w;
+}
+.left{
+    height: 50px;
+}
+.enter{
+    width: @input_w;
+    height: 50px;
+    font-size: 24px;
+}
+}

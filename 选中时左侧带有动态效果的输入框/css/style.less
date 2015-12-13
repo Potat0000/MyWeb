@@ -1,21 +1,12 @@
 @charset "utf-8";
-@reg_w: 500px;
-@reg_h: 300px;
 
-.name {
-	top: 10px;
-}
-
-.password {
-	top: 80px;
-}
-
-.button {
-    top: 200px;
-}
+@import "computer.less";
+@import "pad.less";
+@import "phone.less";
 
 html {
 	background: url(../img/background.jpg) 50% 50% no-repeat fixed;
+	min-width: 320px;
 }
 
 .box-shadow(@x: 1px, @y: 1px, @blur: 0px, @color: #212121) {
@@ -28,32 +19,22 @@ html {
 	position: absolute;
 	display: block;
 	background-color: rgba(255, 255, 255, 0.7);
-	height: @reg_h;
-	width: @reg_w;
 	top: 50%;
 	left: 50%;
-	margin-left: -1 * @reg_w / 2;
-	margin-top: -1 * @reg_h / 2;
 	.box-shadow(0px, 0px, 50px, #787878);
     border-radius: 15px;
 }
 
 .box {
 	position: absolute;
-	left: (@reg_w - 350px)/2;
 }
 
 .look {
 	position: absolute;
 	border-radius: 5px;
-	height: 50px;
-	width: 350px;
-	font-size: 24px;
 	font-family: "微软雅黑";
-	top: 50px;
 	border: solid 2px #CCC;
 	outline: none;
-	padding-left: 15px;
 }
 
 .left {
@@ -62,7 +43,6 @@ html {
 	position: absolute;
 	background: #CCC;
 	opacity: 0;
-	height: 50px;
 	width: 0px;
 	top: 50px;
 	-webkit-transition: width 0.3s ease-out, opacity 0.1s linear;
@@ -85,19 +65,16 @@ html {
 .look:focus::-webkit-input-placeholder,
 .look:hover::-webkit-input-placeholder {
 	color: #c2c2c2;
-	top: 100px;
 }
 
 .enter{
     display: block;
     position: absolute;
     border-radius: 50px;
-    width: 350px;
-    height: 50px;
     border: solid 0px;
     background-color: #58cb73;
     outline: none;
-    font-size: 24px;
+
     font-family: "微软雅黑";
     color: #FFF;
     -webkit-transition: background-color 0.2s linear;
