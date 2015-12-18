@@ -1,32 +1,71 @@
 <!DOCTYPE html>
-<html>
-
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    		
-		<title>My Class</title>
-		<link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/lib/bootstrap-theme.min.css" />
-
-		<!--[if lt IE 9]>
-      		<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      		<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    	<![endif]-->
-
-	</head>
-
-	<body>
-		<h1>My Class</h1>
-		<div class="container">
-			<div class="row">
-				
-			</div>
+<!--[if IE 6]><html lang="zh" class="no-js old ie6"><![endif]-->
+<!--[if IE 7]><html lang="zh" class="no-js old ie7"><![endif]-->
+<!--[if IE 8]><html lang="zh" class="no-js old ie8"><![endif]-->
+<!--[if IE 9]><html lang="zh" class="no-js modern ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="zh" class="no-js modern"><!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>八（5）班 班级网站</title>
+	<link rel="stylesheet" href="include/css/style.css" />
+	<link rel="stylesheet" href="include/css/tabs.css" />
+	<script src="include/js/libs/modernizr.min.js"></script>
+	<script src="include/js/libs/jquery.min.js"></script>
+	<script src="include/js/jquery.tabs.js"></script>
+	<script src="include/js/tab_design.js"></script>
+	<!--[if lte IE 9]><script src="include/js/libs/CFInstall.min.js"></script>
+	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})});</script><![endif]-->
+	<!--[if IE 6]><script src="include/js/libs/DD_belatedPNG.min.js"></script>
+	<script>DD_belatedPNG.fix('.png_bg, img');</script><![endif]-->
+	<!--[if lt IE 9]>
+      	<script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      	<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="page-wrap">
+	
+	<h1>八（5）班<span>班级网站</span></h1>
+	<div id="tab_design">
+		<nav class="tab_menu clearfix">
+			<ul>
+				<li>
+					<a href="#index">
+						<img src="include/images/clock-icon.png" alt="" />网站主页
+					</a>
+				</li>
+				<li>
+					<a href="#photo">
+						<img src="include/images/weather-icon.png" alt="" />班级相册
+					</a>
+				</li>
+				<li>
+					<a href="#about">
+						<img src="include/images/calendar-icon.png" alt="" />关于班级
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="tab_contents">
+			<ul>
+				<li id="index" style="height: auto;">
+					<p>
+						
+					</p>
+				</li>
+				<li id="photo">
+					
+				</li>
+				<li id="about">
+					
+				</li>
+			</ul>
 		</div>
+	</div>
+		
+</div>
 
-		<script src="js/lib/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-	</body>
-
+</body>
 </html>
