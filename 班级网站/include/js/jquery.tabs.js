@@ -1,10 +1,3 @@
-/* jquery.tabs.js - jQuery Tab插件, 2012 © yamoo9.com
-
-	选项
-	start_index: 设置开始索引,
-	random: 设置随机索引,
-	transition_time: 设置切换时间 (毫秒, 1/1000秒)
----------------------------------------------------------------- */
 ;(function($) { 
 	$.fn.tabs = function(options) {
 		
