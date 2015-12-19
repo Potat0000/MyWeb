@@ -1,0 +1,52 @@
+@charset "utf-8";
+@import "css3-classes.less";
+html{
+    overflow-y: scroll;
+    color: #fff;
+}
+
+a:link, a:visited {
+  color: #AAA;
+}
+
+#things { 
+    min-width: 480px - 21px;  
+} 
+
+body{
+    background: #77807f url(../img/BackGround.jpg) center top;
+}
+
+nav ul li {
+    position: relative;
+    float: left;
+    margin-right: 2px;
+    
+}
+
+nav ul li a {
+    display: block;
+    position: relative;
+    text-decoration:none;
+    height: 35px;
+    width: 120px;
+    background: #E5E9EA;
+    .border-radius(7px 7px 0 0);
+}
+
+nav ul li a p{
+    display: inline-block;
+    font-family:'minijianyaya5dcb89f5434d';
+    color:#607291;
+    font-size: 20px;
+    width: auto;
+    .transition(all .2s linear);
+}
+
+nav ul li:hover a,
+nav ul li a:focus,
+nav ul li.active a {
+    background: #f9f9f9;
+    .box-shadow(1px -1px 2px #5c5c5c);
+}
+
