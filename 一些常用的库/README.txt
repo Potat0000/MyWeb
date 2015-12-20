@@ -5,3 +5,7 @@ jquery.min.js
 less.min.js
 	版本：2.5.3
 	作用：提供Less支持
+
+normalize.css
+	版本：3.0.2
+	作用：覆盖浏览器默认样式
