@@ -1,0 +1,32 @@
+@media screen and (min-width : 768px){
+    
+nav ul li a {
+    padding: 0.7em 0em 0.5em 1em;
+}
+
+nav ul li a p {
+    margin-left: 12px;
+}
+
+nav ul li img {
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    .transition(all .2s);
+}
+
+nav ul li:hover a p,
+nav ul li a:focus p,
+nav ul li.choose a p{
+    padding-left: 0.5em;
+    padding-right: 0.8em;
+}
+
+nav ul li:hover img,
+nav ul li.choose img{
+    opacity: 1;
+    left: 10px;
+}
+
+}
