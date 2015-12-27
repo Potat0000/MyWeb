@@ -1,0 +1,16 @@
+@media screen and (max-width: 767px) and (min-width: 481px) {
+  #things {
+    margin-left: -250px;
+    width: 500px;
+  }
+  #things > div {
+    left: -20px;
+  }
+  #things > h1 {
+    left: 46%;
+  }
+  nav + div {
+    width: 450px;
+    top: 51px;
+  }
+}

@@ -1,0 +1,15 @@
+@media screen and (max-width: 480px) {
+  nav ul li a {
+    width: 75px;
+    height: 25px;
+  }
+  nav ul li a img {
+    opacity: 0;
+  }
+  nav ul li a p {
+    position: absolute;
+    left: 9px;
+    top: -2px;
+    font-size: 14px;
+  }
+}
