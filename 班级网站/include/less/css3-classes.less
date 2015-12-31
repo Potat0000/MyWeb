@@ -22,7 +22,7 @@
 	outline-radius: @radius;
 }
 
-// 盒子阴影 
+// 盒子阴影
 .box-shadow( @param ) {
 	-webkit-box-shadow: @param;
 	-moz-box-shadow: @param;
@@ -30,8 +30,8 @@
 }
 
 // 渐变
-.linear-gradient( 
-	@begin: #423d37, 
+.linear-gradient(
+	@begin: #423d37,
 	@end: #1a1816,
 	@switch : 100%
 ) {
@@ -45,13 +45,13 @@
 }
 
 // 双重线
-.double-borders( 
+.double-borders(
 	@colorOne : #25221f,
 	@colorTwo : #423d37,
 	@radius : 0
 ) {
 	border: 1px solid @colorOne;
-	.box-shadow(0 0 0 1px @colorTwo);	
+	.box-shadow(0 0 0 1px @colorTwo);
 	.border-radius( @radius );
 }
 
